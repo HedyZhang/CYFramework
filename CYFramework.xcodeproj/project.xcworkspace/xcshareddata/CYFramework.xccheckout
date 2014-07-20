@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>20199053-97C0-4E07-80C1-0FA82EE7350B</string>
+	<string>710E50D5-C36D-4655-946D-64AC20FCD32E</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CYFramework</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>052B84B7-EE18-4186-8D6E-E64010354AF4</key>
-		<string>https://github.com/hehe19900512/ZDFramework.git</string>
+		<key>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</key>
+		<string>https://github.com/hehe19900512/CYFramework.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CYFramework.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>052B84B7-EE18-4186-8D6E-E64010354AF4</key>
+		<key>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/hehe19900512/ZDFramework.git</string>
+	<string>https://github.com/hehe19900512/CYFramework.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>052B84B7-EE18-4186-8D6E-E64010354AF4</string>
+	<string>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>052B84B7-EE18-4186-8D6E-E64010354AF4</string>
+			<string>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CYFramework</string>
 		</dict>
