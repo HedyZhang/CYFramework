@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 haidi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "CY_Foundation.h"
 
 #pragma mark -
 
@@ -43,6 +43,56 @@
 #define ON_MESSAGE3( __class, __name, __msg ) \
         - (void)handleMessage_##__class##_##__name:(BeeMessage *)__msg
 
+#pragma mark -
+@class CY_Message;
+@compatibility_alias CYMessage CY_Message;
+
+#pragma mark -
+
+@class CYMessage;
+
+typedef void			(^CYMessageBlock)( void );
+typedef CYMessage *	    (^CYMessageBlockV)( void );
+typedef CYMessage *	    (^CYMessageBlockN)( id key, ... );
+typedef CYMessage *	    (^CYMessageBlockT)( NSTimeInterval time );
+typedef id				(^CYMessageObjectBlockN)( id key, ... );
+
+#pragma mark -
+
+@protocol BeeMessageExecutor<NSObject>
+@optional
+- (void)index:(CYMessage *)msg;
+- (void)route:(CYMessage *)msg;
+- (BOOL)prehandle:(CYMessage *)msg;
+- (void)posthandle:(CYMessage *)msg;
+@end
+
 @interface CY_Message : NSObject
+
+AS_STRING( ERROR_DOMAIN_UNKNOWN )
+AS_STRING( ERROR_DOMAIN_SERVER )
+AS_STRING( ERROR_DOMAIN_CLIENT )
+AS_STRING( ERROR_DOMAIN_NETWORK )
+
+AS_INT( ERROR_CODE_OK )			// OK
+AS_INT( ERROR_CODE_UNKNOWN )	// 非知错误
+AS_INT( ERROR_CODE_TIMEOUT )	// 超时
+AS_INT( ERROR_CODE_PARAMS )		// 参数错误
+AS_INT( ERROR_CODE_ROUTES )		// 路由错误
+
+AS_INT( STATE_CREATED )			// 消息被创建
+AS_INT( STATE_SENDING )			// 消息正在发送
+AS_INT( STATE_WAITING )			// 消息正在等待回应
+AS_INT( STATE_SUCCEED )			// 消息处理成功（本地或网络）
+AS_INT( STATE_FAILED )			// 消息处理失败（本地或网络）
+AS_INT( STATE_CANCELLED )		// 消息被取消了
+
+
+@property (nonatomic, readonly) CYMessageBlockN       INPUT;
+@property (nonatomic, readonly) CYMessageBlockN       OUTPUT;
+@property (nonatomic, readonly) CYMessageObjectBlockN GET_INPUT;
+@property (nonatomic, readonly) CYMessageObjectBlockN GET_OUTPUT;
+@property (nonatomic, readonly) CYMessageBlockT       TIMEOUT;
+@property (nonatomic, readonly) CYMessageBlockV       TOLD_PROGRESS;
 
 @end
