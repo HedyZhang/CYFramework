@@ -72,6 +72,7 @@
 		F5734F1119797BE700B91A23 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = F5734EE219797BE700B91A23 /* unzip.c */; };
 		F5734F1219797BE700B91A23 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = F5734EE419797BE700B91A23 /* zip.c */; };
 		F5734F1319797BE700B91A23 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5734EE719797BE700B91A23 /* ZipArchive.mm */; };
+		F5B2B8F819854B9900C6948C /* NSObject+CYMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B2B8F719854B9900C6948C /* NSObject+CYMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,9 @@
 		F5734EE519797BE700B91A23 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
 		F5734EE619797BE700B91A23 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		F5734EE719797BE700B91A23 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		F5B2B8F619854B9900C6948C /* NSObject+CYMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYMessage.h"; sourceTree = "<group>"; };
+		F5B2B8F719854B9900C6948C /* NSObject+CYMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYMessage.m"; sourceTree = "<group>"; };
+		F5B2B8F919854C4A00C6948C /* CY_Precompile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CY_Precompile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +289,7 @@
 				F5734E5219797BAD00B91A23 /* Main.storyboard */,
 				F5734E5519797BAD00B91A23 /* ViewController.h */,
 				F5734E5619797BAD00B91A23 /* ViewController.m */,
+				F5B2B8F919854C4A00C6948C /* CY_Precompile.h */,
 				F5734E7519797BE700B91A23 /* mvc */,
 				F5734E8919797BE700B91A23 /* system */,
 				F5734E9319797BE700B91A23 /* vendor */,
@@ -348,6 +353,7 @@
 				F5734E7E19797BE700B91A23 /* CY_MessageQueue.m */,
 				F5734E7F19797BE700B91A23 /* CY_Routine.h */,
 				F5734E8019797BE700B91A23 /* CY_Routine.m */,
+				F5B2B8F519854B8200C6948C /* extension */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -568,6 +574,15 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
+		F5B2B8F519854B8200C6948C /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5B2B8F619854B9900C6948C /* NSObject+CYMessage.h */,
+				F5B2B8F719854B9900C6948C /* NSObject+CYMessage.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -684,6 +699,7 @@
 				F5734EF019797BE700B91A23 /* CY_Foundation.m in Sources */,
 				F5734EF219797BE700B91A23 /* ASIAuthenticationDialog.m in Sources */,
 				F5734F0D19797BE700B91A23 /* CXMLNode_PrivateExtensions.m in Sources */,
+				F5B2B8F819854B9900C6948C /* NSObject+CYMessage.m in Sources */,
 				F5734F0219797BE700B91A23 /* CTidy.m in Sources */,
 				F5734E5119797BAD00B91A23 /* AppDelegate.m in Sources */,
 				F5734EFA19797BE700B91A23 /* FMDatabase.m in Sources */,
