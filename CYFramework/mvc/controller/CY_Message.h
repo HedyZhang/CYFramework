@@ -70,12 +70,32 @@ AS_INT( STATE_FAILED )			// 消息处理失败（本地或网络）
 AS_INT( STATE_CANCELLED )		// 消息被取消了
 
 
-@property (nonatomic, readonly) CYMessageBlockN       INPUT;     
+@property (nonatomic, readonly) CYMessageBlockN       INPUT;
 @property (nonatomic, readonly) CYMessageBlockN       OUTPUT;
 @property (nonatomic, readonly) CYMessageObjectBlockN GET_INPUT;
 @property (nonatomic, readonly) CYMessageObjectBlockN GET_OUTPUT;
 @property (nonatomic, readonly) CYMessageBlockT       TIMEOUT;
 @property (nonatomic, readonly) CYMessageBlockV       TOLD_PROGRESS;
+
+@property (nonatomic, assign  ) BOOL                  unique;      // 是否同时只能发一个
+@property (nonatomic, assign  ) BOOL                  disabled;    // 是否被禁止回调
+@property (nonatomic, assign  ) BOOL                  async;       // 是否异步
+@property (nonatomic, assign  ) BOOL                  timeout;     // 是否超时了
+@property (nonatomic, assign  ) BOOL                  cached;      // 是否从缓存读取的
+@property (nonatomic, assign  ) BOOL                  emitted;     // 是否被发送了
+@property (nonatomic, assign  ) BOOL                  oneDirection;// 是否单方向发送
+@property (nonatomic, assign  ) NSTimeInterval        seconds;     // 超时时间
+@property (nonatomic, assign  ) BOOL                  useCache;
+
+@property (nonatomic, assign  ) BOOL                  toldProgress;
+@property (nonatomic, assign  ) BOOL                  progressed;
+
+@property (nonatomic, assign  ) id                    responder;
+@property (nonatomic, assign  ) NSInteger             nextState;
+@property (nonatomic, assign  ) NSInteger             state;
+@property (nonatomic, retain  ) NSString              *message;
+@property (nonatomic, retain  ) NSMutableDictionary   *input;
+@property (nonatomic, retain  ) NSMutableDictionary   *output;
 
 
 + (CYMessage *)message;
