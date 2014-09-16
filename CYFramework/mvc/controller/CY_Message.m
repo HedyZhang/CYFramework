@@ -8,6 +8,11 @@
 
 #import "CY_Message.h"
 
+#undef	DEFAULT_TIMEOUT_SECONDS
+#define	DEFAULT_TIMEOUT_SECONDS		(10.0f)
+
+
+
 @implementation CY_Message
 
 DEF_INT( STATE_CREATED,		0 )
@@ -23,5 +28,44 @@ DEF_INT( STATE_WAITING,		5 )
 @dynamic GET_OUTPUT;
 @dynamic TIMEOUT;
 
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _unique = NO;
+        _async = NO;
+        _timeout = NO;
+        _seconds = DEFAULT_TIMEOUT_SECONDS;
+    
+        
+    }
+    return self;
+}
+
++ (CYMessage *)message
+{
+    return [[[CYMessage alloc] init] autorelease];
+}
++ (CYMessage *)message:(NSString *)msg
+{
+    return nil;
+}
+
++ (CYMessage *)message:(NSString *)msg timeoutSeconds:(NSUInteger)seconds
+{
+        return nil;
+}
+
++ (CYMessage *)message:(NSString *)msg responder:(id)responder
+{
+        return nil;
+}
+
++ (CYMessage *)message:(NSString *)msg responder:(id)responder timeoutSeconds:(NSUInteger)seconds
+{
+        return nil;
+    
+}
 
 @end
