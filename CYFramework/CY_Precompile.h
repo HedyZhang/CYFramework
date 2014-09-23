@@ -27,3 +27,12 @@
 
 #define kScreenWidth      CGRectGetWidth([UIScreen mainScreen].applicationFrame)
 #define kScreenHeight     CGRectGetHeight([UIScreen mainScreen].applicationFrame)
+
+#ifndef	weakify
+#if __has_feature(objc_arc)
+#define weakify( x )	autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x;
+#else	// #if __has_feature(objc_arc)
+#define weakify( x )	autoreleasepool{} __block __typeof__(x) __block_##x##__ = x;
+#endif	// #if __has_feature(objc_arc)
+#endif	// #ifndef	weakify
+
