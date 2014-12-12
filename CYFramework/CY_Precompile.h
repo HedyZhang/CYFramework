@@ -6,20 +6,20 @@
 //  Copyright (c) 2014年 haidi. All rights reserved.
 //
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
+#if __IPHONE_OS_VERSION_MAX_ALLOWED <= __IPHONE_7_0
 
-#define UILineBreakMode					NSLineBreakMode
-#define UILineBreakModeWordWrap			NSLineBreakByWordWrapping
-#define UILineBreakModeCharacterWrap	NSLineBreakByCharWrapping
-#define UILineBreakModeClip				NSLineBreakByClipping
-#define UILineBreakModeHeadTruncation	NSLineBreakByTruncatingHead
-#define UILineBreakModeTailTruncation	NSLineBreakByTruncatingTail
-#define UILineBreakModeMiddleTruncation	NSLineBreakByTruncatingMiddle
+#define NSLineBreakMode                 UILineBreakMode
+#define NSLineBreakByWordWrapping       UILineBreakModeWordWrap
+#define NSLineBreakByCharWrapping       UILineBreakModeCharacterWrap
+#define NSLineBreakByClipping           UILineBreakModeClip
+#define NSLineBreakByTruncatingHead     UILineBreakModeHeadTruncation
+#define NSLineBreakByTruncatingTail     UILineBreakModeTailTruncation
+#define NSLineBreakByTruncatingMiddle   UILineBreakModeMiddleTruncation
 
-#define UITextAlignmentLeft				NSTextAlignmentLeft
-#define UITextAlignmentCenter			NSTextAlignmentCenter
-#define UITextAlignmentRight			NSTextAlignmentRight
-#define	UITextAlignment					NSTextAlignment
+#define NSTextAlignmentLeft				UITextAlignmentLeft
+#define NSTextAlignmentCenter			UITextAlignmentCenter
+#define NSTextAlignmentRight			UITextAlignmentRight
+#define	NSTextAlignment					UITextAlignment
 
 #endif	// #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
 
