@@ -10,29 +10,29 @@
 	<string>CYFramework</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</key>
+		<key>0B39C858BF31513B1F808F3C5D2B8543ED75734D</key>
 		<string>https://github.com/hehe19900512/CYFramework.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CYFramework.xcodeproj/project.xcworkspace</string>
+	<string>CYFramework.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</key>
+		<key>0B39C858BF31513B1F808F3C5D2B8543ED75734D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hehe19900512/CYFramework.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</string>
+	<string>0B39C858BF31513B1F808F3C5D2B8543ED75734D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>ADA9F4C0-94FB-4C61-B4AD-71AF1B47AA66</string>
+			<string>0B39C858BF31513B1F808F3C5D2B8543ED75734D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CYFramework</string>
 		</dict>
